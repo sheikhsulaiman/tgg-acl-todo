@@ -13,4 +13,7 @@
         <input type="text" wire:model="title" placeholder="Add a new task..." class="border p-2 w-full">
         <button type="submit" class="bg-blue-500 text-white p-2 mt-2">Add Task</button>
     </form>
+
+    @livewire('counter')
+    @livewire("user-profile", ['userId' => 1, 'defaultName' => 'John Doe'])
 </div>

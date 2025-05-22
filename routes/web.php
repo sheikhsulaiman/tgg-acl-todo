@@ -3,10 +3,23 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Livewire\TaskManager;
+use App\Livewire\Counter;
+use App\Livewire\InputPreview;
+use App\Livewire\VisibilityToggle;
+use App\Livewire\UserProfile;
 
 
 Route::get('/tasks', TaskManager::class)
     ->name('tasks.index');
+
+Route::get('/counter', Counter::class)
+    ->name('counter');
+Route::get('/visibility-toggle', VisibilityToggle::class)
+    ->name('visibility-toggle');
+Route::get('/user-profile', UserProfile::class)
+    ->name('user-profile');
+Route::get('/input-preview', InputPreview::class)
+    ->name('input-preview');
 
 
 Route::get('/', function () {
